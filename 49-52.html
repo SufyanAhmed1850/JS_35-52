@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hide {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section>
+            <div> <br>
+                <label for="fname">First Name: <br>
+                    <input id="fname" type="text" placeholder="Enter your first name"> <br> <br>
+                </label>
+                <label for="lname">Last Name: <br>
+                    <input id="lname" type="text" placeholder="Enter your last name"> <br> <br>
+                </label>
+                <label for="mail">Mail: <br>
+                    <input id="mail" type="text" placeholder="Enter your email"> <br> <br>
+                </label>
+                <label for="pass">Pass: <br>
+                    <input id="pass" type="password" placeholder="Enter your password">
+                </label><br><br>
+                <button onclick="getFormData()">Submit</button>
+            </div>
+            <p id="data"></p>
+        </section>
+        <section>
+            <div class="item-details">
+                <h2>Item Name</h2>
+                <p class="short-description">Short description of the item.</p>
+                <p class="full-description hide" id="full-description-1">Full description of the item.</p>
+                <button id="btn" class="read-more" onclick="toggleDescription('full-description-1')">Show more</button>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="49-52.js"></script>
+
+</html>

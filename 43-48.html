@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .cardWrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            width: 85%;
+            height: 100vh;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            border: 1px solid #222;
+            height: 350px;
+            border-radius: 6px;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .cardWrapper img {
+            width: 250px;
+            vertical-align: baseline;
+        }
+
+        .image {
+            overflow: hidden;
+            background-color: #222;
+            height: 100%;
+            margin-top: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="javascript: void[0]" onclick="alertOnClick()">Click here to learn more about 'Iphone 15'</a>
+    <div class="cardWrapper">
+        <div onclick="alertOnMobile('Phone 01')" class="card">
+            <div class="image">
+                <img src="./Android-Mobile-Download-Free-PNG.png">
+            </div>
+            <p>Phone 01</p>
+        </div>
+        <div onclick="alertOnMobile('Phone 02')" class="card">
+            <div class="image">
+                <img src="./Galaxy-Z-Flip-5-renders-removebg-preview.png">
+            </div>
+            <p>Phone 02</p>
+        </div>
+        <div onclick="alertOnMobile('Phone 03')" class="card">
+            <div class="image">
+                <img src="./iPhone-14-PNG-Clipart.png">
+            </div>
+            <p>Phone 03</p>
+        </div>
+        <div onclick="alertOnMobile('Phone 04')" class="card">
+            <div class="image">
+                <img src="./MPD7861P_1-removebg-preview.png">
+            </div>
+            <p>Phone 04</p>
+        </div>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <td>index</td>
+                <td> </td>
+                <td>name</td>
+                <td>class</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>0</td>
+                <td> </td>
+                <td>Jhone</td>
+                <td>10</td>
+                <td><button onclick="deleteRow(this)">delete</button></td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td> </td>
+                <td>Duckett</td>
+                <td>9</td>
+                <td><button onclick="deleteRow(this)">delete</button></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td> </td>
+                <td>Mr Wick</td>
+                <td>12</td>
+                <td><button onclick="deleteRow(this)">delete</button></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td> </td>
+                <td>Doe</td>
+                <td>5</td>
+                <td><button onclick="deleteRow(this)">delete</button></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td> </td>
+                <td>Mark</td>
+                <td>8</td>
+                <td><button onclick="deleteRow(this)">delete</button></td>
+            </tr>
+        </tbody>
+    </table>
+    <div>
+        <img id="car" onmouseover="toggleImg('over')" onmouseout="toggleImg('out')" src="./front.jpg" width="900px" height="452px" style="margin: 5rem 0; border: 2px solid #222; border-radius: 6px;">
+    </div>
+    <div>
+        <p id="counterScreen">0</p>
+        <button onclick="count('inc')">Increment</button>
+        <button onclick="count('dec')">Decrement</button>
+    </div>
+</body>
+<script src="43-48.js"></script>
+</html>
